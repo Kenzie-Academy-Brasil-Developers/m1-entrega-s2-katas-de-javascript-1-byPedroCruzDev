@@ -1,94 +1,153 @@
-function oneThroughTwenty() {
-    
-   /* Your code goes below
-   Write a for or a while loop
-   return the result*/
+//1.oneThroughTwenty - Retornar os números de 1 a 20. (1, 2, 3,..., 19, 20)
+function oneThroughTwenty(num) {
+
+  let newArr = [];
+
+  for(let i = 1; i <= num; i++){
+    newArr.push(i)
+  }
+  return newArr
     
 }
+console.log(oneThroughTwenty(20))
 
-//call function oneThroughTwenty
+//2.call function oneThroughTwenty
 
-function evensToTwenty() {
+//evensToTwenty - Retornar os números pares de 1 a 20. (2, 4, 6,..., 18, 20)
+function evensToTwenty(num) {
     
-   /* Your code goes below
-   Write a for or a while loop
-   return the result */
-  
+let pairArr = [];
+
+for(let i = 1; i <= num ; i++){
+  if( i % 2 == 0){
+    pairArr.push(i)
+  }
+}
+  return pairArr
 }
 
-//call function evensToTwenty
+console.log(evensToTwenty(20))
 
-function oddsToTwenty() {
+
+//3.oddsToTwenty - Retornar os números ímpares de 1 a 20. (1, 3, 5,..., 17, 19)
+function oddsToTwenty(num) {
     
-  /* Your code goes below
-  Write a for or a while loop
-  return the result */
+  let oddArr = [];
+
+  for(let i = 1; i <= num; i++){
+    if( i % 2 !== 0){
+      oddArr.push(i)
+    }
+  }
+  return oddArr
    
 }
 
-//call function oddsToTwenty
+console.log(oddsToTwenty(20))
 
-function multiplesOfFive() {
+//4.multiplesOfFive - Retornar os múltiplos de 5 até 100. (5, 10, 15,..., 95, 100)
+function multiplesOfFive(num) {
     
-  /* Your code goes below
-  Write a for or a while loop
-  return the result */
+let multiplesArr = [];
+for(let i = 1; i <= num; i++){
+  if( i % 5 == 0){
+    multiplesArr.push(i)
+  }
+}
+return multiplesArr
 
 }
 
-//call function multiplesOfFive
+console.log(multiplesOfFive(100))
 
-function squareNumbers() {
+
+//5.squareNumbers - Retornar todos os números até 100 que forem quadrados perfeitos. (1, 4, 9, ..., 81, 100)
+function squareNumbers(num) {
     
- /* Your code goes below
-  Write a for or a while loop
-  return the result */
+let squareArr = [];
+for(let i = 1; i <= num; i++){
+  if(Math.sqrt(i) % 1 === 0){
+    squareArr.push(i)
+  }
+}
+return squareArr
     
 }
 
-//call function squareNumbers
+console.log(squareNumbers(100))
 
-function countingBackwards() {
-    
-  /* Your code goes below
-  Write a for or a while loop
-  return the result */
+//6.countingBackwards - Retornar os números contando de trás para frente de 20 até 1. (20, 19, 18, ..., 2, 1)
+function countingBackwards(num) {
+  let counter = [];
+  
+  for(let i = num; i >= 1; i--){
+    counter.push(i)
+  }
+  return counter
 }
 
-//call function countingBackwards
+console.log(countingBackwards(20))
 
-function evenNumbersBackwards() {
+
+//7.evenNumbersBackwards - Retornar os números pares de 20 até 1. (20, 18, 16, ..., 4, 2)
+function evenNumbersBackwards(num) {
     
- /* Your code goes below
-  Write a for or a while loop
-  return the result */
+  let pairArr = [];
+
+  for(let i = num; i >= 1; i--){
+    if( i%2 == 0 ){
+      pairArr.push(i)
+    }
+  }
+  return pairArr
 }
 
-//call function evenNumbersBackwards
+console.log(evenNumbersBackwards(20))
 
-function oddNumbersBackwards() {
-    
- /* Your code goes below
-  Write a for or a while loop
-  return the result */
+
+//8.oddNumbersBackwards - Retornar os números ímpares de 20 até 1. (19, 17, 15, ..., 3, 1)
+function oddNumbersBackwards(num) {
+
+  let oddArr = [];
+
+  for(let i = num; i >= 1; i--){
+    if( i%2 !== 0 ){
+      oddArr.push(i)
+    }
+  }
+  return oddArr
+
 }
 
-//call function oddNumbersBackwards
+console.log(oddNumbersBackwards(20))
 
-function multiplesOfFiveBackwards() {
+
+//9.multiplesOfFiveBackwards - Retornar os múltiplos de 5 contando de trás para frente a partir de 100. (100, 95, 90, ..., 10, 5)
+function multiplesOfFiveBackwards(num) {
     
- /* Your code goes below
-  Write a for or a while loop
-  return the result */
+let multiplesArr = [];
+
+for(let i = num; i >= 1; i--){
+  if( i%5 === 0){
+    multiplesArr.push(i)
+  }
+}
+return multiplesArr
 }
 
-//call function multiplesOfFiveBackwards
+console.log(multiplesOfFiveBackwards(100))
 
-function squareNumbersBackwards() {
+//10.squareNumbersBackwards - Retornar os quadrados perfeitos contando de trás para frente a partir de 100. (100, 81, 64, ..., 4, 1)
+function squareNumbersBackwards(num) {
     
-   /* Your code goes below
-  Write a for or a while loop
-  return the result */
+  let squareArr = [];
+
+  for(let i = num; i >= 1; i--){
+    if(Math.sqrt(i)%1 == 0){
+      squareArr.push(i)
+    }
+  }
+  return squareArr
 }
 
-//call function squareNumbersBackwards
+console.log(squareNumbersBackwards(100))
